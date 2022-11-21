@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="7.7288899mm"
+   height="7.7298598mm"
+   viewBox="0 0 7.7288899 7.7298598"
+   version="1.1"
+   id="svg176516"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   sodipodi:docname="facebook.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview176518"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.76257015"
+     inkscape:cx="-221.61896"
+     inkscape:cy="36.717934"
+     inkscape:window-width="1920"
+     inkscape:window-height="1034"
+     inkscape:window-x="0"
+     inkscape:window-y="22"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs176513" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-97.10168,-138.73671)">
+    <path
+       fill="currentColor"
+       d="m 98.51298,138.73742 c -0.7818,0 -1.4113,0.62951 -1.4113,1.41128 v 4.90658 c 0,0.78179 0.6295,1.41129 1.4113,1.41129 h 2.6593 v -3.02162 h -0.79899 v -1.08786 h 0.79899 v -0.92945 c 0,-0.73019 0.4721,-1.40066 1.55962,-1.40066 0.44029,0 0.76589,0.0424 0.76589,0.0424 l -0.0258,1.01589 c 0,0 -0.33206,-0.004 -0.69442,-0.004 -0.39217,0 -0.45506,0.1807 -0.45506,0.48067 v 0.79441 h 1.18063 l -0.0515,1.08787 h -1.12918 v 3.02161 h 1.0968 c 0.78179,0 1.41131,-0.62949 1.41131,-1.41128 v -4.90656 c 0,-0.78179 -0.62952,-1.41128 -1.41131,-1.41128 h -4.90655 z"
+       id="path48372"
+       style="fill:#ffffff;stroke-width:0.00772912" />
+  </g>
+</svg>

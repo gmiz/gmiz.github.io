@@ -1,0 +1,427 @@
+<!doctype html>
+<!-- This website was designed and made by Gmiz: http://gmiz.net -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/phosphor.css" rel="stylesheet">
+    <link href="assets/css/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/fonts/fonts.css" rel="stylesheet">
+    <link href="assets/css/video-js.css" rel="stylesheet">
+    <link href="assets/images/favicon.svg" rel="icon">
+    <title>Zero Password Manager - Be Born For Securing Passwords</title>
+  </head>
+  <body onload="init();">
+    <!-- The Navbar Section -->
+    <!-- Designed and made by Gmiz: http://gmiz.net -->
+    <nav id="nav" class="navbar navbar-expand-lg fixed-top navbar-light bg-white menu">
+      <div class="container px-sm-3 px-4">
+        <a class="navbar-brand py-3" href="">
+          <img src="assets/images/logo.svg" alt="Zero Password Manager Logo">
+        </a>
+        <button href="#" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav pb-lg-0 pb-4">
+            <li class="nav-item">
+              <a class="nav-link" href="gallery">GALLERY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="no-internet">NO INTERNET</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="security">SECURITY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="features">FEATURES</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- The Home Section -->
+    <!-- Designed and made by Gmiz: http://gmiz.net -->
+    <div id="home" class="bg-dark p-0 intro phone-center fix-over">
+      <div id="nav-placeholder" class="container-fluid"></div>
+      <div class="container-fluid p-del nightsky">
+        <div></div>
+        <img src="./assets/images/nightsky.jpg">
+      </div>
+      <div class="container-fluid d-flex fix-up justify-content-center">
+        <img src="assets/images/wave-up.svg" class="wave p-del goto-front">
+      </div>
+      <div class="container py-sm-5 py-4">
+        <div class="row p-sm-0 px-2 justify-content-center">
+          <div class="col-lg-6 text-light d-flex align-items-center goto-front py-xxl-4 py-lg-3 left-side">
+            <h1 class="display-2">
+              <div class="display-2--title">Born For Securing Passwords</div>
+              <div class="display-2--description">Zero is the safest password manager to generate, store, and autofill passwords.</div>
+              <div class="d-flex justify-content-sm-start justify-content-center">
+              <a href="#tryfree" class="btn btn-lg rounded-pill btn-custom peek">TRY ZERO FREE</a>
+              </div>
+            </h1>
+          </div>
+          <div class="col-lg-6 text-light d-flex align-items-center pt-5 ps-xl-3 ps-lg-0 intro-right">
+            <img src="assets/images/devices.png" class="img-fluid goto-front d-lg-block intro-design">
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid d-flex fix-down justify-content-center">
+        <img src="assets/images/wave-down.svg" class="wave p-del goto-front">
+      </div>
+    </div>
+
+    <!-- So Easy To Use Section -->
+    <!-- Designed and made by Gmiz: http://gmiz.net -->
+    <div id="about" class="intro bg-white p-0 what-can-do phone-center fix-over">
+      <div class="container py-sm-5 py-4">
+        <div class="container text-light d-flex align-items-center goto-front pt-4">
+          <h1 class="display-2 text-center m-auto">
+            <div class="display-2--title">So Easy To Use</div>
+            <div class="display-2--description middle-description pb-2">The user-friendly design gives you a fabulous experience. It's easier than ever to manage your passwords.</div>
+          </h1>
+        </div>
+        <div id="zero-video-all" class="container text-light m-auto d-flex justify-content-center pb-lg-5 pb-4 pt-4">
+          <div class="intro-outline-dark">
+            <div id="video-all" class="video-area m-0 p-0">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid d-flex fix-down justify-content-center">
+        <img src="assets/images/cut-up.svg" class="cut p-del goto-front">
+      </div>
+    </div>
+
+    <!-- Why Trust Zero Section -->
+    <!-- Designed and made by Gmiz: http://gmiz.net -->
+    <div id="home" class="bg-mydark p-0 intro whytrustzero fix-over">
+      <div class="container pt-sm-5 pt-4 pb-sm-4 pb-0">
+        <div class="container text-light d-flex align-items-center goto-front pt-4 phone-center">
+          <h1 class="display-2 text-center m-auto">
+            <div class="display-2--title">Why Trust Zero?</div>
+            <div class="display-2--description middle-description">The solid security model helps you defend against malicious attacks. It's safer than ever to store your passwords.</div>
+          </h1>
+        </div>
+        <div class="why-trust-core container pb-5 pt-lg-5 pt-0">
+          <div class="row">
+            <div class="col-lg-6 text-light d-flex align-items-center py-lg-2 py-sm-5 pb-4 pt-5 intro-right">
+              <div class="intro-outline-light">
+                <img src="assets/images/true-offline.jpg" class="outline-img img-fluid goto-front d-lg-block">
+              </div>
+            </div>
+            <div class="col-lg-6 text-light d-flex align-items-center goto-front py-xxl-4 py-lg-3 py-0">
+              <h1 class="display-2 ps-xl-3">
+                <div class="display-2--title mb-0">True offline keeps your data isolated from the Internet</div>
+                <div class="display-2--description mb-0">Zero doesn't connect to the Internet. All your data is stored only on your device for your safeguard. Neither hackers nor our staff has access to your data.</div>
+              </h1>
+            </div>
+          </div>
+          <div class="row d-flex flex-lg-row flex-column-reverse">
+            <div class="col-lg-6 text-light d-flex align-items-center goto-front py-xxl-4 py-lg-3 py-0">
+              <h1 class="display-2 ps-xl-3">
+                <div class="display-2--title mb-0">Security chip protects your data on your device</div>
+                <div class="display-2--description mb-0">Zero encrypts your data with a key generated by the security chip on your phone. Mobile wallet uses the same chip to protect your card information, so if you trust the mobile wallet, you can trust Zero.</div>
+              </h1>
+            </div>
+            <div class="col-lg-6 text-light d-flex align-items-center py-lg-2 py-sm-5 pb-4 pt-5 intro-right">
+              <div class="intro-outline-light">
+                <img src="assets/images/security-chip.jpg" class="outline-img img-fluid goto-front d-lg-block">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 text-light d-flex align-items-center py-lg-2 py-sm-5 pb-4 pt-5 intro-right">
+              <div class="intro-outline-light">
+                <img src="assets/images/verifiable-technologies.jpg" class="outline-img img-fluid goto-front d-lg-block">
+              </div>
+            </div>
+            <div class="col-lg-6 text-light d-flex align-items-center goto-front py-xxl-4 py-lg-3 py-0">
+              <h1 class="display-2 ps-xl-3">
+                <div class="display-2--title mb-0">Verifiable technologies provide security transparency</div>
+                <div class="display-2--description mb-0">We're constantly developing verifiable security technologies and applying them to Zero, as well as publicly sharing verification methods so that everyone can check its security at any time.</div>
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- The Patents Section -->
+    <!-- Designed and made by Gmiz: http://gmiz.net -->
+    <div id="about" class="patents intro bg-white p-0 phone-center fix-over">
+      <div class="container-fluid d-flex fix-up justify-content-center">
+        <img src="assets/images/cut-down.svg" class="cut p-del goto-front">
+      </div>
+      <div class="container py-sm-5 py-4">
+        <div class="container text-light d-flex align-items-center goto-front pt-3 pb-sm-4">
+          <h1 class="display-2 text-center m-auto">
+            <div class="display-2--title">Patent Pending Technologies</div>
+            <div class="display-2--description middle-description">We have been innovating security technologies and have filed three patent applications with the United States Patent and Trademark Office (USPTO).</div>
+          </h1>
+        </div>
+        <div class="container pb-lg-5 pb-4 px-2">
+          <div class="row pt-4 px-2">
+            <div class="col-lg-6 text-light d-flex align-items-center pb-lg-0 pb-sm-5 pb-4 pe-lg-4 intro-right">
+              <div class="intro-outline-dark">
+                <img src="assets/images/patent-pending.jpg" class="outline-img img-fluid goto-front d-lg-block">
+              </div>
+            </div>
+            <div class="col-lg-6 text-light d-flex align-items-center goto-front py-xxl-4 py-lg-3 py-0">
+              <h1 class="display-2 ps-xl-3">
+                <div class="patent-display d-flex align-items-stretch mb-3">
+                  <div class="patent-mark"><img src="./assets/images/patent-mark.svg"></div>
+                  <div class="patent-description display-2--description mb-0">SYSTEM AND METHOD FOR DECRYPTING ENCRYPTED SECRET DATA ITEMS WITHOUT MASTER PASSWORD</div>
+                </div>
+                <div class="patent-display d-flex align-items-stretch my-3">
+                  <div class="patent-mark"><img src="./assets/images/patent-mark.svg"></div>
+                  <div class="patent-description display-2--description mb-0">SYSTEM AND METHOD FOR PROTECTING SECRET DATA ITEMS USING MULTIPLE TIERS OF ENCRYPTION AND SECURE ELEMENT</div>
+                </div>
+                <div class="patent-display d-flex align-items-stretch mt-3">
+                  <div class="patent-mark"><img src="./assets/images/patent-mark.svg"></div>
+                  <div class="patent-description display-2--description mb-0">SYSTEM AND METHOD FOR SAFELY AUTOFILLING LOGIN FIELDS IN COMPUTING SOURCES</div>
+                </div>
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Loved By Many Users Section -->
+    <!-- Designed and made by Gmiz: http://gmiz.net -->
+    <div id="home" class="bg-dark p-0 intro fix-over">
+      <div class="container-fluid p-del nightsky">
+        <div></div>
+        <img src="./assets/images/testimonials.jpg">
+      </div>
+      <div class="container-fluid d-flex fix-up justify-content-center">
+        <img src="assets/images/wave-up.svg" class="wave p-del goto-front">
+      </div>
+      <div class="container py-sm-5 py-4">
+        <div class="container text-light d-flex align-items-center goto-front pt-xl-4 pt-0">
+          <h1 class="display-2 text-center m-auto">
+            <div class="display-2--title mb-lg-4 mb-0">Loved by Many Users</div>
+            <div class="review-badges px-0 py-lg-4 py-2">
+              <img class="px-lg-2 px-0 pb-lg-0 pb-2 pt-lg-0 pt-sm-5 pt-4" src="./assets/images/review-badge-2.svg">
+              <img class="px-lg-2 px-0 pt-lg-0 pt-3 pb-lg-0 pb-sm-5 pb-4" src="./assets/images/review-badge-1.svg">
+            </div>
+          </h1>
+        </div>
+        <div class="container pb-xl-3 pb-2">
+          <div class="testimonials-swiper py-lg-4 px-sm-0 px-2 position-relative">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide testimonial">
+                  <div><i class="ph-quotes-fill"></i></div>
+                  <p class="testimonial-person text-light">Melvin Tan</p>
+                  <img class="testimonial-stars" src="./assets/images/review-stars.svg">
+                  <p class="testimonial-content text-light">"As of writing this, I have bought the app no longer then 2 hours ago. My first impression? It's amazing! 13 bucks a year, 3 times cheaper than dashlane. And the qr code save makes it so good. Good UI and easy use :)"</p>
+                </div>
+                <div class="swiper-slide testimonial">
+                  <div><i class="ph-quotes-fill"></i></div>
+                  <p class="testimonial-person text-light">InfiniteMaximum</p>
+                  <img class="testimonial-stars" src="./assets/images/review-stars.svg">
+                  <p class="testimonial-content text-light">"I got a response that they will be implementing an import for myki. Changed to 5 stars. That would make me happy as I prefer an offline security model. Most other password managers are cloud based with a vault."</p>
+                </div>
+                <div class="swiper-slide testimonial">
+                  <div><i class="ph-quotes-fill"></i></div>
+                  <p class="testimonial-person text-light">chloromycetin</p>
+                  <img class="testimonial-stars" src="./assets/images/review-stars.svg">
+                  <p class="testimonial-content text-light">"No need to upload my data to cloud, but only save on my phone. Good customer support, really patient and professional, answered all my questions. Am happy to use the app and satisfied with your wonderful service."</p>
+                </div>
+                <div class="swiper-slide testimonial">
+                  <div><i class="ph-quotes-fill"></i></div>
+                  <p class="testimonial-person text-light">Socrate Disciple's</p>
+                  <img class="testimonial-stars" src="./assets/images/review-stars.svg">
+                  <p class="testimonial-content text-light">"Very happy with your app!! I cannot thank you enough specially for the fact that the app works OFFLINE and only ask for permition with option to decline filling up or storing it! Very clever and intuitive app! I like it."</p>
+                </div>
+                <div class="swiper-slide testimonial">
+                  <div><i class="ph-quotes-fill"></i></div>
+                  <p class="testimonial-person text-light">Coisissie</p>
+                  <img class="testimonial-stars" src="./assets/images/review-stars.svg">
+                  <p class="testimonial-content text-light">"Have been a pro user for more than a year. No need to sign up, no need to submit any personal information, really private and safe. Lots of nice features and soooo easy to use."</p>
+                </div>
+                <div class="swiper-slide testimonial">
+                  <div><i class="ph-quotes-fill"></i></div>
+                  <p class="testimonial-person text-light">Klagen-Dole</p>
+                  <img class="testimonial-stars" src="./assets/images/review-stars.svg">
+                  <p class="testimonial-content text-light">"I like offline password manager because I don't wanna store my passwords in the cloud. This app has lots of features that I need, like templates, autofill, otp authenticator and so on. They also have extension on desktop browsers."</p>
+                </div>
+              </div>
+              <div class="swiper-pagination p-0 pt-3"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+        <div id="tryfree" class="container-fluid d-flex fix-down justify-content-center">
+          <img src="assets/images/wave-down.svg" class="wave p-del goto-front">
+        </div>
+    </div>
+
+    <!-- Try Zero Now Section -->
+    <!-- Designed and made by Gmiz: http://gmiz.net -->
+    <div id="tryzeronow" class="intro bg-white p-0 phone-center fix-over">
+      <div class="container py-sm-5 py-4">
+        <div class="row py-4 px-2 justify-content-center">
+          <div class="col-xl-8 col-lg-9 col-12 text-light d-flex align-items-center goto-front py-xxl-4 py-lg-3 py-0">
+            <h1 class="display-2">
+              <div class="display-2--title text-dark text-center">Try Zero Now!</div>
+              <div class="display-2--description text-dark prominent text-center">Download the app and install the browser extension.</div>
+              <div class="row platforms g-md-4 gx-4 gy-2 py-5 justify-content-center">
+                <div class="col-auto d-flex justify-content-center align-items-center">
+                  <a target="_blank" href="https://apps.apple.com/us/app/id1456104806"><img src="./assets/images/appstore.svg"></a>
+                  <a target="_blank" href="https://play.google.com/store/apps/details?id=tech.bluespace.android.id_guard"><img src="./assets/images/playstore.svg"></a>
+                </div>
+                <div class="w-100 d-md-none"></div>
+                <div class="col-auto d-flex justify-content-center align-items-center">
+                  <div class="platform-separator"></div>
+                </div>
+                <div class="w-100 d-md-none"></div>
+                <div class="col-auto d-flex justify-content-center align-items-center">
+                  <a target="_blank" href="https://chrome.google.com/webstore/detail/zeroformerly-id-guard-off/kimpaankoiokddpaghgclckecbeogifh?hl=en-US"><img src="./assets/images/chrome.svg"></a>
+                  <a target="_blank" href="https://microsoftedge.microsoft.com/addons/detail/zeroformerly-id-guard-of/nggbpcfgnneigfdemljglckmeckbidag"><img src="./assets/images/edge.svg"></a>
+                  <a target="_blank" href="https://addons.mozilla.org/en-US/firefox/addon/zero-password-manager/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search"><img src="./assets/images/firefox.svg"></a>
+                  <a target="_blank" href="https://apps.apple.com/us/app/id-guard-extension/id1633870028?l=en&mt=12"><img src="./assets/images/safari.svg"></a>
+                </div>
+              </div>
+              <div class="display-2--description text-dark">For security reasons, all your data is only stored in the Zero app on your phone, so the extension must work with the app.</div>
+            </h1>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid d-flex fix-down justify-content-center">
+        <img src="assets/images/cut-up.svg" class="cut p-del goto-front">
+      </div>
+    </div>
+
+    <!-- The Footer Section -->
+    <!-- Designed and made by Gmiz: http://gmiz.net -->
+    <footer class="bg-mydark py-4 px-sm-5 px-3 phone-center fix-over">
+      <div class="row justify-content-center m-auto align-items-center pb-3 pt-lg-4 pt-sm-2">
+        <div class="col-md-6 col-sm-9 d-flex justify-content-center align-items-center pb-md-0 pb-3">
+          <a href="mailto:contact@bluespace.tech" class="email-link">
+            <div class="d-flex align-items-center">
+              <img src="./assets/images/email.svg">
+              <div>contact@bluespace.tech</div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 justify-content-center">
+          <div class="footer-links d-flex justify-content-center align-items-center">
+            <a target="_blank" href="https://www.facebook.com/ZeroPasswordManager/"><img src="./assets/images/facebook.svg"></a>
+            <a target="_blank" href="https://twitter.com/_Zero_PM"><img src="./assets/images/twitter.svg"></a>
+            <a target="_blank" href="https://www.reddit.com/user/BluespaceInc"><img src="./assets/images/reddit.svg"></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom text-sm-center">Wuyang New Town Square, Suite 2521, Yuexiu District, Guangzhou, Guangdong, China.</div>
+      <div class="footer-bottom pb-lg-4 pb-0 text-sm-center">&#xA9; 2022 Blue Space Information Technology Co., Ltd. All rights reserved.</div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Designed and made by Gmiz: http://gmiz.net -->
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/video.js"></script>
+    <script>
+        function hide(element) {
+            element.style.opacity = "0%";
+            setTimeout(() => {
+                element.style.display = "none";
+            }, 250);
+        }
+        function playVideo() {
+            var video = videojs("#video");
+            video.play();
+        }
+        function setNavbarShadow() {
+            var vscroll = window.pageYOffset ||
+                          document.documentElement.scrollTop ||
+                          document.body.scrollTop || 0;
+            if (vscroll > 10)
+                document.getElementById("nav").style.boxShadow = "0 0.3rem 1rem 0 rgba(0,0,0,0.25)";
+            else
+                document.getElementById("nav").style.boxShadow = "none";
+            return vscroll;
+        }
+        function loadVideo() {
+            var w = window.screen.availWidth;
+            var container = document.getElementById("video-all");
+  
+            var img = document.createElement('img');
+            var video = document.createElement('video');
+            var source = document.createElement('source');
+  
+            if (w <= 575) {
+                img.setAttribute("src", "assets/images/video-thumbnail-mobile.jpg");
+                source.setAttribute("src", "assets/videos/about-mobile.mp4");
+            } else {
+                img.setAttribute("src", "assets/images/video-thumbnail.jpg");
+                source.setAttribute("src", "assets/videos/about.mp4");
+            }
+  
+            img.setAttribute("id", "video-thumbnail");
+            img.setAttribute("onclick", "hide(this);playVideo();");
+            source.setAttribute("id", "video-source");
+            source.setAttribute("type", "video/mp4");
+            video.setAttribute("id", "video");
+            video.setAttribute("class", "video-special video-js vjs-default-skin");
+            video.setAttribute("controls", "");
+            video.setAttribute("data-setup", "{}");
+            //video.setAttribute("data-setup", '{"fluid":true}');
+  
+            container.appendChild(img);
+            container.appendChild(video);
+            video.appendChild(source);
+  
+            video.load();
+        }
+        function init() {
+            setNavbarShadow();
+            loadVideo();
+            document.addEventListener("scroll", setNavbarShadow);
+            const swiper = new Swiper('.testimonials-swiper', {
+                loop: true,
+                speed: 400,
+                centeredSlides: true,
+                autoplay: true,
+                spaceBetween: 50,
+                navigation: {
+                  nextEl: '.swiper-button-next',
+                  prevEl: '.swiper-button-prev',
+                },
+                pagination: {
+                  el: '.swiper-pagination',
+                  type: 'bullets',
+                },
+
+                breakpoints: {
+                    0: {
+                        slidesPerView: 1,
+                    },
+                    576: {
+                        slidesPerView: 1.2,
+                    },
+                    768: {
+                        slidesPerView: 1.5,
+                    },
+                    992: {
+                        slidesPerView: 2.2,
+                    },
+                    1200: {
+                        slidesPerView: 2.6,
+                    },
+                    1400: {
+                        slidesPerView: 3,
+                    },
+                },
+
+            });
+        }
+    </script>
+  </body>
+</html>

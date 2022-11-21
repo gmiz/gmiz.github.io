@@ -1,0 +1,114 @@
+<!doctype html>
+<!-- This website was designed and made by Gmiz: http://gmiz.net -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <link href="../assets/css/phosphor.css" rel="stylesheet">
+    <link href="../assets/css/swiper-bundle.min.css" rel="stylesheet">
+    <link href="../assets/fonts/fonts.css" rel="stylesheet">
+    <link href="../assets/css/video-js.css" rel="stylesheet">
+    <link href="../assets/images/favicon.svg" rel="icon">
+    <title>Zero Password Manager - Be Born For Securing Passwords</title>
+  </head>
+  <body onload="init();">
+    <!-- The Navbar Section -->
+    <!-- Designed and made by Gmiz: http://gmiz.net -->
+    <nav id="nav" class="navbar navbar-expand-lg fixed-top navbar-light bg-white menu">
+      <div class="container px-sm-3 px-4">
+        <a class="navbar-brand py-3" href="..">
+          <img src="../assets/images/logo.svg" alt="Zero Password Manager Logo">
+        </a>
+        <button href="#" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav pb-lg-0 pb-4">
+            <li class="nav-item">
+              <a class="nav-link" href="../gallery">GALLERY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../no-internet">NO INTERNET</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">SECURITY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../features">FEATURES</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- The Home Section -->
+    <!-- Designed and made by Gmiz: http://gmiz.net -->
+    <div id="home" class="bg-dark p-0 intro phone-center">
+      <div id="nav-placeholder" class="container-fluid"></div>
+      <div class="container-fluid p-del nightsky">
+        <div></div>
+        <img src="../assets/images/nightsky.jpg">
+      </div>
+      <div class="container-fluid d-flex fix-up justify-content-center">
+        <img src="../assets/images/wave-up.svg" class="wave p-del goto-front">
+      </div>
+      <div class="container py-sm-5 py-4">
+        <div class="row p-sm-0 px-2 justify-content-center">
+          <div class="col text-light d-flex align-items-center goto-front py-xxl-4 py-lg-3 left-side">
+            <h1 class="display-2">
+              <div class="display-2--title">Under maintenance</div>
+              <div class="display-2--description">This part of the website will be available soon. If you have a question, or would like to learn more about anything related to our application, feel free to contact us via email: <a href="mailto:contact@bluespace.tech">contact@bluespace.tech</a></div>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- The Footer Section -->
+    <!-- Designed and made by Gmiz: http://gmiz.net -->
+    <footer class="bg-mydark py-4 px-sm-5 px-3 phone-center fix-over">
+      <div class="row justify-content-center m-auto align-items-center pb-3 pt-lg-4 pt-sm-2">
+        <div class="col-md-6 col-sm-9 d-flex justify-content-center align-items-center pb-md-0 pb-3">
+          <a href="mailto:contact@bluespace.tech" class="email-link">
+            <div class="d-flex align-items-center">
+              <img src="../assets/images/email.svg">
+              <div>contact@bluespace.tech</div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 justify-content-center">
+          <div class="footer-links d-flex justify-content-center align-items-center">
+            <a target="_blank" href="https://www.facebook.com/ZeroPasswordManager/"><img src="../assets/images/facebook.svg"></a>
+            <a target="_blank" href="https://twitter.com/_Zero_PM"><img src="../assets/images/twitter.svg"></a>
+            <a target="_blank" href="https://www.reddit.com/user/BluespaceInc"><img src="../assets/images/reddit.svg"></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom text-sm-center">Wuyang New Town Square, Suite 2521, Yuexiu District, Guangzhou, Guangdong, China.</div>
+      <div class="footer-bottom pb-lg-4 pb-0 text-sm-center">&#xA9; 2022 Blue Space Information Technology Co., Ltd. All rights reserved.</div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Designed and made by Gmiz: http://gmiz.net -->
+    <script src="../assets/js/bootstrap.bundle.js"></script>
+    <script src="../assets/js/swiper-bundle.min.js"></script>
+    <script src="../assets/js/video.js"></script>
+    <script>
+        function setNavbarShadow() {
+            var vscroll = window.pageYOffset ||
+                          document.documentElement.scrollTop ||
+                          document.body.scrollTop || 0;
+            if (vscroll > 10)
+                document.getElementById("nav").style.boxShadow = "0 0.3rem 1rem 0 rgba(0,0,0,0.25)";
+            else
+                document.getElementById("nav").style.boxShadow = "none";
+            return vscroll;
+        }
+        function init() {
+            setNavbarShadow();
+            document.addEventListener("scroll", setNavbarShadow);
+        }
+    </script>
+  </body>
+</html>

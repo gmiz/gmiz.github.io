@@ -10,9 +10,102 @@
     <link href="../assets/fonts/fonts.css" rel="stylesheet">
     <link href="../assets/css/video-js.css" rel="stylesheet">
     <link href="../assets/images/favicon.svg" rel="icon">
-    <title>Zero Password Manager - Be Born For Securing Passwords</title>
+    <title>Gallery - Zero Password Manager</title>
+    <script src="../assets/js/video.js"></script>
   </head>
   <body onload="init();">
+
+    <!-- Videos Popup Section -->
+    <!-- Designed and made by Gmiz: http://gmiz.net -->
+    <script> var all_videos = Array(); </script>
+    <div id="videos-popup" class="videos-popup">
+      <div class="close-icon" onclick="hide('videos-popup');">
+        <img src="../assets/images/close.svg">
+      </div>
+      <div class="video-swiper">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide d-flex justify-content-center align-items-center">
+            <div class="intro-outline-light">
+              <div id="video-all" class="video-area m-0 p-0">
+                <video id="video-1" class="video-special video-js vjs-default-skin" controls data-setup="{}">
+                  <source id="video-source" src="../assets/videos/gallery-1.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+          <script> all_videos.push([ videojs("#video-1"), 1 ]); </script>
+
+          <div class="swiper-slide d-flex justify-content-center align-items-center">
+            <div class="intro-outline-light">
+              <div id="video-all" class="video-area m-0 p-0">
+                <video id="video-7" class="video-special video-js vjs-default-skin" controls data-setup="{}">
+                  <source id="video-source" src="../assets/videos/gallery-7.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+          <script> all_videos.push([ videojs("#video-7"), 7 ]); </script>
+
+          <div class="swiper-slide d-flex justify-content-center align-items-center">
+            <div class="intro-outline-light">
+              <div id="video-all" class="video-area m-0 p-0">
+                <video id="video-2" class="video-special video-js vjs-default-skin" controls data-setup="{}">
+                  <source id="video-source" src="../assets/videos/gallery-2.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+          <script> all_videos.push([ videojs("#video-2"), 2 ]); </script>
+
+          <div class="swiper-slide d-flex justify-content-center align-items-center">
+            <div class="intro-outline-light">
+              <div id="video-all" class="video-area m-0 p-0">
+                <video id="video-3" class="video-special video-js vjs-default-skin" controls data-setup="{}">
+                  <source id="video-source" src="../assets/videos/gallery-3.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+          <script> all_videos.push([ videojs("#video-3"), 3 ]); </script>
+
+          <div class="swiper-slide d-flex justify-content-center align-items-center">
+            <div class="intro-outline-light">
+              <div id="video-all" class="video-area m-0 p-0">
+                <video id="video-4" class="video-special video-js vjs-default-skin" controls data-setup="{}">
+                  <source id="video-source" src="../assets/videos/gallery-4.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+          <script> all_videos.push([ videojs("#video-4"), 4 ]); </script>
+
+          <div class="swiper-slide d-flex justify-content-center align-items-center">
+            <div class="intro-outline-light">
+              <div id="video-all" class="video-area m-0 p-0">
+                <video id="video-5" class="video-special video-js vjs-default-skin" controls data-setup="{}">
+                  <source id="video-source" src="../assets/videos/gallery-5.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+          <script> all_videos.push([ videojs("#video-5"), 5 ]); </script>
+
+          <div class="swiper-slide d-flex justify-content-center align-items-center">
+            <div class="intro-outline-light">
+              <div id="video-all" class="video-area m-0 p-0">
+                <video id="video-6" class="video-special video-js vjs-default-skin" controls data-setup="{}">
+                  <source id="video-source" src="../assets/videos/gallery-6.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+          <script> all_videos.push([ videojs("#video-6"), 6 ]); </script>
+
+        </div>
+      </div>
+    </div>
+
     <!-- The Navbar Section -->
     <!-- Designed and made by Gmiz: http://gmiz.net -->
     <nav id="nav" class="navbar navbar-expand-lg fixed-top navbar-light bg-white menu">
@@ -29,9 +122,6 @@
               <a class="nav-link" href="">GALLERY</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../no-internet">NO INTERNET</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="../security">SECURITY</a>
             </li>
             <li class="nav-item">
@@ -44,7 +134,7 @@
 
     <!-- The Home Section -->
     <!-- Designed and made by Gmiz: http://gmiz.net -->
-    <div id="home" class="bg-dark p-0 intro phone-center">
+    <div id="home" class="bg-dark p-0 intro phone-center fix-over">
       <div id="nav-placeholder" class="container-fluid"></div>
       <div class="container-fluid p-del nightsky">
         <div></div>
@@ -56,12 +146,83 @@
       <div class="container py-sm-5 py-4">
         <div class="row p-sm-0 px-2 justify-content-center">
           <div class="col text-light d-flex align-items-center goto-front py-xxl-4 py-lg-3 left-side">
-            <h1 class="display-2">
-              <div class="display-2--title">Under maintenance</div>
-              <div class="display-2--description">This part of the website will be available soon. If you have a question, or would like to learn more about anything related to our application, feel free to contact us via email: <a href="mailto:contact@bluespace.tech">contact@bluespace.tech</a></div>
+            <h1 class="display-2 middle-top">
+              <div class="display-2--title">Gallery</div>
+              <div class="display-2--description mb-0">This is just some random text for preview purposes. You can put anything here. This text explains Gallery in a sentence or two.</div>
             </h1>
           </div>
         </div>
+      </div>
+      <div class="container-fluid d-flex fix-down justify-content-center">
+        <img src="../assets/images/wave-down.svg" class="wave p-del goto-front">
+      </div>
+    </div>
+
+    <!-- Videos Section -->
+    <!-- Designed and made by Gmiz: http://gmiz.net -->
+    <div id="home" class="bg-white p-0 intro whytrustzero videos fix-over">
+      <div class="container pt-sm-5 pt-4 pb-sm-4 pb-0">
+        <div class="why-trust-core container pb-5 pt-lg-5 pt-0">
+          <div class="row justify-content-center gx-4 gy-lg-5">
+            <div class="col-lg-4 col-sm-6 text-dark d-flex flex-column align-items-center py-lg-2 py-sm-5 pb-4 pt-5 intro-right">
+              <div class="intro-outline-dark my-0">
+                <img src="../assets/videos/thumbnails/gallery-1.png" onclick="displayVideo(1);" class="outline-img img-fluid goto-front d-lg-block">
+              </div>
+              <h1 class="display-2 mt-4">
+                <div class="display-2--title mb-0">Scan to fill password</div>
+                <div class="display-2--description mb-0">Show the scan box on a desktop browser. Scan the QR code with your phone.</div>
+              </h1>
+            </div>
+            <div class="col-lg-4 col-sm-6 text-dark d-flex flex-column align-items-center py-lg-2 py-sm-5 pb-4 pt-5 intro-right">
+              <div class="intro-outline-dark my-0">
+                <img src="../assets/videos/thumbnails/gallery-2.png" onclick="displayVideo(2);" class="outline-img img-fluid goto-front d-lg-block">
+              </div>
+              <h1 class="display-2 mt-4">
+                <div class="display-2--title mb-0">Scan to fill password</div>
+                <div class="display-2--description mb-0">Show the scan box on a desktop browser. Scan the QR code with your phone.</div>
+              </h1>
+            </div>
+            <div class="col-lg-4 col-sm-6 text-dark d-flex flex-column align-items-center py-lg-2 py-sm-5 pb-4 pt-5 intro-right">
+              <div class="intro-outline-dark my-0">
+                <img src="../assets/videos/thumbnails/gallery-3.png" onclick="displayVideo(3);" class="outline-img img-fluid goto-front d-lg-block">
+              </div>
+              <h1 class="display-2 mt-4">
+                <div class="display-2--title mb-0">Scan to fill password</div>
+                <div class="display-2--description mb-0">Show the scan box on a desktop browser. Scan the QR code with your phone.</div>
+              </h1>
+            </div>
+            <div class="col-lg-4 col-sm-6 text-dark d-flex flex-column align-items-center py-lg-2 py-sm-5 pb-4 pt-5 intro-right">
+              <div class="intro-outline-dark my-0">
+                <img src="../assets/videos/thumbnails/gallery-4.png" onclick="displayVideo(4);" class="outline-img img-fluid goto-front d-lg-block">
+              </div>
+              <h1 class="display-2 mt-4">
+                <div class="display-2--title mb-0">Scan to fill password</div>
+                <div class="display-2--description mb-0">Show the scan box on a desktop browser. Scan the QR code with your phone.</div>
+              </h1>
+            </div>
+            <div class="col-lg-4 col-sm-6 text-dark d-flex flex-column align-items-center py-lg-2 py-sm-5 pb-4 pt-5 intro-right">
+              <div class="intro-outline-dark my-0">
+                <img src="../assets/videos/thumbnails/gallery-5.png" onclick="displayVideo(5);" class="outline-img img-fluid goto-front d-lg-block">
+              </div>
+              <h1 class="display-2 mt-4">
+                <div class="display-2--title mb-0">Scan to fill password</div>
+                <div class="display-2--description mb-0">Show the scan box on a desktop browser. Scan the QR code with your phone.</div>
+              </h1>
+            </div>
+            <div class="col-lg-4 col-sm-6 text-dark d-flex flex-column align-items-center py-lg-2 py-sm-5 pb-4 pt-5 intro-right">
+              <div class="intro-outline-dark my-0">
+                <img src="../assets/videos/thumbnails/gallery-6.png" onclick="displayVideo(6);" class="outline-img img-fluid goto-front d-lg-block">
+              </div>
+              <h1 class="display-2 mt-4">
+                <div class="display-2--title mb-0">Scan to fill password</div>
+                <div class="display-2--description mb-0">Show the scan box on a desktop browser. Scan the QR code with your phone.</div>
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid d-flex fix-down justify-content-center">
+        <img src="../assets/images/cut-up.svg" class="cut p-del goto-front">
       </div>
     </div>
 
@@ -93,8 +254,51 @@
     <!-- Designed and made by Gmiz: http://gmiz.net -->
     <script src="../assets/js/bootstrap.bundle.js"></script>
     <script src="../assets/js/swiper-bundle.min.js"></script>
-    <script src="../assets/js/video.js"></script>
     <script>
+        var swiper = new Swiper('.video-swiper', {
+            direction: "vertical",
+            speed: 350,
+            centeredSlides: true,
+            autoplay: false,
+            slidesPerView: 1,
+            keyboard: {
+                enabled: true,
+            },
+            mousewheel: {
+                enabled: true,
+            },
+        });
+        function hide(id) {
+            window.history.replaceState("", document.title, window.location.pathname);
+            element = document.getElementById(id);
+            element.classList.remove("show-function");
+            element.classList.add("hide-function");
+            setTimeout(() => {
+                element.style.display = "none";
+            }, 250);
+        }
+        function show(id) {
+            element = document.getElementById(id);
+            element.classList.remove("hide-function");
+            element.classList.add("show-function");
+            element.style.display = "block";
+        }
+        function displayVideo(index) {
+            var cnt = 1;
+            for (i in all_videos) {
+                if (all_videos[i][1] == index) {
+                    swiper.slideTo(cnt - 1, 0);
+                    break;
+                }
+                cnt++;
+            }
+            show('videos-popup');
+            activateVideo(cnt - 1);
+        }
+        function playVideo() {
+            var video = videojs("#video");
+            video.play();
+        }
         function setNavbarShadow() {
             var vscroll = window.pageYOffset ||
                           document.documentElement.scrollTop ||
@@ -105,9 +309,32 @@
                 document.getElementById("nav").style.boxShadow = "none";
             return vscroll;
         }
+
         function init() {
             setNavbarShadow();
+            handleSearchString();
             document.addEventListener("scroll", setNavbarShadow);
+        }
+        function activateVideo(index) {
+            window.history.replaceState("", document.title, "?video="+all_videos[index][1]);
+            for (j = 0; j < all_videos.length; j++) {
+                all_videos[j][0].pause();
+                all_videos[j][0].currentTime(0);
+            }
+            all_videos[index][0].play();
+        }
+        swiper.on('slideChange', function () {
+            activateVideo(swiper.activeIndex);
+        });
+        function handleSearchString() {
+            if (window.location.search != "") {
+                var video_index = parseInt(location.search.slice(1).split("&")[0].split("=")[1]);
+                if (video_index > 0 && video_index < all_videos.length+1) {
+                    displayVideo(video_index);
+                } else {
+                    window.history.replaceState("", document.title, window.location.pathname);
+                }
+            }
         }
     </script>
   </body>

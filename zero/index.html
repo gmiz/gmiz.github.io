@@ -29,9 +29,6 @@
               <a class="nav-link" href="gallery">GALLERY</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="no-internet">NO INTERNET</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="security">SECURITY</a>
             </li>
             <li class="nav-item">
@@ -380,6 +377,17 @@
   
             video.load();
         }
+/*
+        function scroll_to(id) {
+            var element = document.getElementById(id);
+            element.scrollIntoView({behavior: "smooth"});
+        }
+        function fix_anchor() {
+            var url = window.location.href;
+            var anchor = url.replace(/^.*#/, "");
+            scroll_to("#" + anchor);
+        }
+        */
         function init() {
             setNavbarShadow();
             loadVideo();

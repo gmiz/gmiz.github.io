@@ -254,7 +254,7 @@
             </div>
           </div>
         </div>
-        <div id="tryfree" class="container-fluid d-flex fix-down justify-content-center">
+        <div class="container-fluid d-flex fix-down justify-content-center">
           <img src="assets/images/wave-down.svg" class="wave p-del goto-front">
         </div>
     </div>
@@ -262,6 +262,7 @@
     <!-- Try Zero Now Section -->
     <!-- Designed and made by Gmiz: http://gmiz.net -->
     <div id="tryzeronow" class="intro bg-white p-0 phone-center fix-over">
+      <div id="tryfree"></div>
       <div class="container py-sm-5 py-4">
         <div class="row py-4 px-2 justify-content-center">
           <div class="col-xl-8 col-lg-9 col-12 text-light d-flex align-items-center goto-front py-xxl-4 py-lg-3 py-0">
@@ -369,25 +370,19 @@
             video.setAttribute("class", "video-special video-js vjs-default-skin");
             video.setAttribute("controls", "");
             video.setAttribute("data-setup", "{}");
-            //video.setAttribute("data-setup", '{"fluid":true}');
-  
+
             container.appendChild(img);
             container.appendChild(video);
             video.appendChild(source);
   
             video.load();
+
+            if (location.hash != "") {
+                var real_hash = location.hash;
+                location.hash = "#zeroloading";
+                location.hash = real_hash;
+            }
         }
-/*
-        function scroll_to(id) {
-            var element = document.getElementById(id);
-            element.scrollIntoView({behavior: "smooth"});
-        }
-        function fix_anchor() {
-            var url = window.location.href;
-            var anchor = url.replace(/^.*#/, "");
-            scroll_to("#" + anchor);
-        }
-        */
         function init() {
             setNavbarShadow();
             loadVideo();

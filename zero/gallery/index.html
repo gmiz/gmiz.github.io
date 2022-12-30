@@ -40,7 +40,7 @@
             <div class="intro-outline-light">
               <div id="video-all" class="video-area m-0 p-0">
                 <video id="video-1" class="video-special video-js vjs-default-skin" controls playsinline data-setup="{}">
-                  <source id="video-source" src="../assets/videos/gallery-1.mp4" type="video/mp4">
+                  <source id="video-source" src="../assets/videos/1-get-started.mp4" type="video/mp4">
                 </video>
               </div>
             </div>
@@ -62,7 +62,7 @@
             <div class="intro-outline-light">
               <div id="video-all" class="video-area m-0 p-0">
                 <video id="video-2" class="video-special video-js vjs-default-skin" controls playsinline data-setup="{}">
-                  <source id="video-source" src="../assets/videos/gallery-2.mp4" type="video/mp4">
+                  <source id="video-source" src="../assets/videos/2-add-account.mp4" type="video/mp4">
                 </video>
               </div>
             </div>
@@ -73,7 +73,7 @@
             <div class="intro-outline-light">
               <div id="video-all" class="video-area m-0 p-0">
                 <video id="video-3" class="video-special video-js vjs-default-skin" controls playsinline data-setup="{}">
-                  <source id="video-source" src="../assets/videos/gallery-3.mp4" type="video/mp4">
+                  <source id="video-source" src="../assets/videos/3-check-app-permission.mp4" type="video/mp4">
                 </video>
               </div>
             </div>
@@ -193,7 +193,7 @@
             <div class="intro-outline-light">
               <div class="video-swiper-other-content">
                 <img src="../assets/images/patent-pending.jpg">
-                <div>In friendship diminution instrument so. Son sure paid door with say them. Two among sir sorry men court. Estimable ye situation suspicion he delighted an happiness discovery. Fact are size cold why had part. If believing or sweetness otherwise in we forfeited. Tolerably an unwilling arranging of determine. Beyond rather sooner so if up wishes or. In friendship diminution instrument so. Son sure paid door with say them.</div>
+                <div>In friendship diminution instrument so. Son sure paid door with say them. Two among sir sorry men court. Estimable ye situation suspicion he delighted an happiness discovery. Fact are size cold why had part. If believing or sweetness otherwise in we forfeited. Tolerably an unwilling arranging of determine. Beyond rather sooner so if up wishes or.</div>
               </div>
             </div>
           </div>
@@ -381,22 +381,24 @@
             centeredSlides: true,
             autoplay: false,
             slidesPerView: 1,
-            keyboard: {
-                enabled: true,
-            },
-            mousewheel: {
-                enabled: true,
-            },
+            keyboard: true,
+            mousewheel: true,
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
         });
+
         function hide(id) {
             window.history.replaceState("", document.title, window.location.pathname);
             element = document.getElementById(id);
             element.classList.remove("show-function");
             element.classList.add("hide-function");
+            for (i in all_videos) {
+                if (all_videos[i][0] != "") {
+                    all_videos[i][0].pause();
+                }
+            }
             setTimeout(() => {
                 element.style.display = "none";
             }, 250);
